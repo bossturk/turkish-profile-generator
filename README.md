@@ -30,6 +30,8 @@ print("Email:", profile['email'])
 print("Password:", profile['password'])
 print("Gender:", profile['gender'])
 
+profile.reset()
+
 Features
 Generates random Turkish names.
 Generates random age, birth date, email address, and password.
