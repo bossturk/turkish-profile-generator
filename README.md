@@ -14,6 +14,8 @@ from turkish_profile_generator import UserProfileGenerator
 
 # Create an instance of UserProfileGenerator class
 generator = UserProfileGenerator(min_age=18, max_age=50)
+#generator = UserProfileGenerator(min_age=18, max_age=50, gender='Female')
+#generator = UserProfileGenerator(min_age=18, max_age=50, gender='Male')
 
 # Generate a random user profile
 profile = generator.generate_profile()
