@@ -26,8 +26,8 @@ class UserProfileGenerator(object):
             return [name.strip() for name in file.readlines()]
 
     def generate_profile(self):
-        firstname = self.get_firstname()
-        lastname = self.get_lastname()
+        firstname = self.get_firstname().lower()
+        lastname = self.get_lastname().lower()
         current_year = datetime.now().year
         birth_year = random.randint(current_year - self.max_age, current_year - self.min_age)
         birth_month = random.randint(1, 12)

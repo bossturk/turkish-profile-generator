@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: turkish-profile-generator
-Version: 0.2.0
+Version: 0.2.1
 Summary: Example PyPI (Python Package Index) Package
 Home-page: https://github.com/bossturk/turkish-profile-generator
 Author: Mustafa Buyruk
@@ -42,6 +42,8 @@ from turkish_profile_generator import UserProfileGenerator
 
 # Create an instance of UserProfileGenerator class
 generator = UserProfileGenerator(min_age=18, max_age=50)
+#generator = UserProfileGenerator(min_age=18, max_age=50, gender='Female')
+#generator = UserProfileGenerator(min_age=18, max_age=50, gender='Male')
 
 # Generate a random user profile
 profile = generator.generate_profile()
@@ -55,6 +57,8 @@ print("Birthday:", profile['birthday'])
 print("Email:", profile['email'])
 print("Password:", profile['password'])
 print("Gender:", profile['gender'])
+
+profile.reset()
 
 Features
 Generates random Turkish names.
